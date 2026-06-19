@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    background-color: white;
+}
+header{
+    height: 10svh;
+    width: 100%;
+    padding: 0 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo{
+        width: 250px;
+        height: 60px;
+        border:1px solid;
+    }
+    nav{
+        display: flex;
+        padding: 20px;
+        gap: 50px;
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 1.3rem;
+                font-weight: 500;
+            }
+        }
+    }
+    .buttons{
+        display: flex;
+        gap: 20px;
+        button{
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-size: 1.3rem;
+            border: none;
+            outline: none;
+        }
+        button:first-child{
+            background-color: white;
+            color: black;
+            border: none;
+            outline: none;
+            font-weight: 500;
+        }
+        button:last-child{
+            background-color: cornflowerblue;
+            color: white;
+        }
+    }
+}
+.hero{
+    min-height: 90svh;
+    width: 100%;
+    .left{
+        height: 100%;
+        width: 45%;
+        padding: 2% 4%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        .bubble{
+            height: 45px;
+            width: max-content;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;align-items: center;
+            font-weight: 500;
+            padding: 0 30px;
+            background-color: rgba(100, 148, 237, 0.123)
+        }
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            font-size: 1.5rem;
+            color: grey;
+        }
+        .buttons{
+            /* margin-top: 20px; */
+            /* height: 80px; */
+            width: 100%;
+            display: flex;
+            gap: 30px;
+            button{
+                font-size: 1.5rem;
+                padding: 20px 40px;
+                border-radius: 10px;
+            }
+        }
+        button:first-child{
+            background-color: cornflowerblue;
+            border: none;
+            outline: none;
+            color: white;
+            font-weight: 500;
+        }
+        button:last-child{
+            background-color: white;
+            border: 2px solid gainsboro;
+            font-weight: 600;
+        }
+    }
+}
+.feature-cards{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 4%;
+    h2{
+        font-size: 2rem;
+    }
+    .cards{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .card{
+            height: 270px;
+            width: 215px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px gainsboro;
+            .icon{
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+                background-color: rgba(100, 148, 237, 0.123);
+            }
+            p{
+                color: grey;
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+    }
+}
+.hero-2{
+    width: 100%;
+    display: flex;
+    background-color: rgba(100, 148, 237, 0.123);
+    .left{
+        width: 45%;
+    }
+    .right{
+        padding: 4%;
+        /* background-color: antiquewhite; */
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .bubble{
+            background-color: rgba(100, 148, 237, 0.123);
+            height: 40px;
+            font-size: 1rem;
+            border-radius: 20px;
+            padding: 10px 20px;
+            width: fit-content;
+        }
+        h2{
+            font-size: 3rem;
+            span{
+                color: cornflowerblue;
+            }
+        }
+        p{
+            font-size: 1.2rem;
+            color: grey;
+        }
+        li{
+            margin-bottom: 20px;
+            list-style: none;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+    }
+}
